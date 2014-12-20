@@ -48,3 +48,10 @@ Specify what it takes to deploy your app.
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
+
+
+Use Ember Inspector to retrieve data from Rails app
+
+```js
+$E.store.find('friend').then(function(friends) { friends.forEach(function(friend) { console.log('Hi from ' + friend.get('firstName')); }) });
+```

@@ -6,10 +6,9 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.resource('friends', function() { });
+  this.resource('friends', function() {
+    this.route('new');
+  });
 });
 
 export default Router;
-
-// Use Ember Inspector to retrieve data from Rails app 
-// $E.store.find('friend').then(function(friends) { friends.forEach(function(friend) { console.log('Hi from ' + friend.get('firstName')); }) });
