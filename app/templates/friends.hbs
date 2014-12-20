@@ -4,9 +4,9 @@
 <ul>
   {{#each friend in model}}
     <li>
-      {{#linkTo 'friends.show' friend}}
+      {{#link-to 'friends.show' friend}}
         {{friend.firstName}} {{friend.lastName}}
-      {{/linkTo}}
+      {{/link-to}}
     </li>
   {{/each}}
 </ul>
