@@ -3,7 +3,11 @@
 
 <ul>
   {{#each friend in model}}
-    <li>{{friend.firstName}} {{friend.lastName}}</li>
+    <li>
+      {{#linkTo 'friends.show' friend}}
+        {{friend.firstName}} {{friend.lastName}}
+      {{/linkTo}}
+    </li>
   {{/each}}
 </ul>
 
