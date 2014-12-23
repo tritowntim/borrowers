@@ -1,11 +1,6 @@
-{{outlet}}
 
-<p>
-  {{model.firstName}}
-</p>
-<p>
-  {{model.lastName}}
-</p>
+<h2>{{model.fullName}}</h2>
+
 <p>
   {{model.email}}
 </p>
@@ -15,4 +10,11 @@
 
 {{#link-to 'friends.edit' model}}
   edit
+{{/link-to}}
+
+<br>
+<br>
+
+{{#link-to 'friends.index'}}
+  all friends
 {{/link-to}}

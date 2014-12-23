@@ -2,6 +2,12 @@ html, body {
   margin: 20px;
 }
 
+h1 {
+  text-transform: uppercase;
+  font-size: small;
+  color: grey;
+}
+
 a.delete {
   font-size: small;
   margin-left: 4px;

@@ -1,19 +1,2 @@
 
-<h2>Friends ({{model.length}})</h2>
-
-<ul>
-  {{#each friend in model}}
-    <li>
-      {{#link-to 'friends.show' friend}}
-        {{friend.fullName}}
-      {{/link-to}}
-      <a href="#" {{action 'delete' friend}} class="delete">delete</a>
-    </li>
-  {{/each}}
-</ul>
-
-{{#link-to 'friends.new'}}
-  add new friend
-{{/link-to}}
-
 {{outlet}}
